@@ -15,7 +15,8 @@ import NewPostPage from './pages/new_post/NewPostPage';
 // COMPONENTS
 import Header from './components/header/Header';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <Router>
