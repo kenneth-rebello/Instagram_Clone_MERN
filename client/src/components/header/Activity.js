@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Activity.css';
 
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';

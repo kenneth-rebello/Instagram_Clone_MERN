@@ -3,6 +3,8 @@
     justify-content: space-around;
     align-items: center;
     position: sticky;
+    top:0;
+    z-index: 7;
     height: 45px;
     padding: 5px;
     padding-top: 7px;
@@ -31,8 +33,18 @@
     text-align: start;
 }
 
+@media screen and (max-width:400px) {
+    .header__title{
+        height: 30px;
+    }
+    .header__search{
+        display: none;
+    }
+}
+
 .header__icons{
     color: var(--secondary);
+    display: flex;
 }
 
 .header__activity, .header__profile{
@@ -40,6 +52,14 @@
     border-radius: 5px;
     padding: 5px 15px;
 }
+
+@media screen and (max-width:400px) {
+    .header__activity, .header__profile{
+        max-width: 250px;
+        margin-left: -55px;
+    }
+}
+
 .header__activity{
     overflow-y: scroll;
 }

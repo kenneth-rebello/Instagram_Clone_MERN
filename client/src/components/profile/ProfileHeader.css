@@ -1,0 +1,64 @@
+.profileHeader{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+}
+
+.profileHeader__image{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: auto;
+    padding-right: 80px;
+    width: 100%;
+}
+.profileHeader img{
+    height: 150px;
+}
+
+.profileHeader__info{
+    flex: 2;
+    padding-top: 20px;
+}
+
+.profileHeader .profileIntro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profileHeader .profileIntro .btn-group{
+    display: flex;
+    align-items: flex-start;
+}
+.profileHeader .profileIntro .username{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    color: var(--secondary);
+}
+
+.profileHeader .profileStats{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.profileHeader .profileDetails .fullName{
+    margin: 0;
+    color: var(--secondary);
+}
+.profileHeader .profileDetails .bio{
+    margin: 0;
+    white-space: pre-wrap;
+}
+.profileHeader .profileDetails a{
+    color: var(--tertiary);
+    font-weight: 800;
+    font-size: 14px;
+}

@@ -13,7 +13,6 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutlined';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
-import LoopIcon from '@material-ui/icons/Loop';
 
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
@@ -34,7 +33,7 @@ const Header = () => {
     }
     
     return (
-        <div className="header__main">
+        <nav className="header__main">
             <Link to="/" onClick={()=>setActive("home")}>
                 <img 
                     className="header__title"
@@ -43,7 +42,7 @@ const Header = () => {
                     height="40px"
                 />
             </Link>
-            <input className="header__search" placeholder="Search"/>
+            <input className="header__search" placeholder="&#128269; Search"/>
             <div className="header__icons">
                 <span className="icon">
                     <Link to="/" onClick={()=>setActive("home")}>
@@ -85,7 +84,7 @@ const Header = () => {
                     </div>}
                 <span className="icon dropdown">
                     <button onClick={toggleUser}> 
-                        <img src="https://yt3.ggpht.com/ytc/AKedOLQK_NpZ0DpwVwu9WDyAtuDpTTq428DlYnFUNmYEaw=s900-c-k-c0x00ffffff-no-rj" 
+                        <img src="https://kenneth-rebello.github.io/images/me.png" 
                             alt="J"
                         />
                     </button>
@@ -93,26 +92,26 @@ const Header = () => {
                 {user && <div id="profile" className="header__profile dropdown-content">
                     <ClickAwayListener onClickAway={toggleUser}>
                         <div className="header__userOptions">
-                            <Link to="/kenrebel" className="header__userOption">
+                            <Link to="/kenrebel" className="header__userOption" onClick={toggleUser}>
                                 <AccountCircleOutlinedIcon fontSize={'inherit'}/>
                                 <p>User</p>
                             </Link>
-                            <Link to="/saved" className="header__userOption">
+                            <Link to="/saved" className="header__userOption" onClick={toggleUser}>
                                 <BookmarkBorderOutlinedIcon fontSize={'inherit'}/>
                                 <p>Saved</p>
                             </Link>
-                            <Link to="/settings" className="header__userOption last">
+                            <Link to="/settings" className="header__userOption last" onClick={toggleUser}>
                                 <SettingsOutlinedIcon fontSize={'inherit'}/>
                                 <p>Settings</p>
                             </Link>
-                            <div className="header__userOption">
+                            <div className="header__userOption" onClick={toggleUser}>
                                 <p>Log Out</p>
                             </div>
                         </div>
                     </ClickAwayListener> 
                 </div>}
             </div>
-        </div>
+        </nav>
     )
 }
 

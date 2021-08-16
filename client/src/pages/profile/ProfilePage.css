@@ -1,0 +1,13 @@
+.profile{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 13px;
+}

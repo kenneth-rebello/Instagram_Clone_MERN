@@ -1,0 +1,45 @@
+.postsGrid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.postThumbnail{
+    height: 330px;
+    width: 330px;
+    overflow: hidden;
+    position: relative;
+}
+.postThumbnail img{
+    height: 330px;
+    width: 330px;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay span{
+    color: var(--primary);
+    font-size: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  
+.postThumbnail:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}

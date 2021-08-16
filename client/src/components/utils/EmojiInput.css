@@ -1,0 +1,39 @@
+.commentForm{
+    padding: 10px;
+    border-top: 1px solid var(--border);
+}
+
+.commentForm__main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.commentForm__emoji{
+    font-size: 30px;
+}
+
+.commentForm__input{
+    flex: 2;
+    border: none;
+    height: 15px;
+    margin: 1px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.commentForm button{
+    border: none;
+    background: none;
+    color: var(--button);
+    cursor: pointer;
+}
+.commentForm button:disabled{
+    cursor: auto;
+    color: var(--buttonDisabled);
+}
+
+.commentForm__emojis{
+    background: none;
+    margin-left: 0px;
+}
